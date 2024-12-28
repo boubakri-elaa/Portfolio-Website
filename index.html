@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creative Portfolio Website">
+  <title>MyPortfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#my-work">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>
+        Hi, I'm <span class="highlight">Elaa!</span>
+      </h1>
+      <p class="typing-effect"></p><br>
+      <a href="#about" class="btn">Explore more about me</a>
+    </div>
+
+    <div class="profile-picture">
+      <img src="me.png" alt="Your Profile Picture">
+    </div>
+
+    <div id="particles-js"></div>
+  </section>
+
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p class="intro">
+        I'm a passionate developer who loves crafting functional and visually stunning websites. My goal is to merge creativity with technology.
+      </p>
+      <div class="skills">
+        <div class="skill" data-aos="fade-up" data-aos-delay="100">
+          <p>HTML</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="200">
+          <p>CSS</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="300">
+          <p>JavaScript</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="200">
+          <p>C</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="200">
+          <p>C#</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-delay="200">
+          <p>Java</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="more-about" data-aos="zoom-in">
+        <a href="CV.pdf" class="btn" target="_blank">My CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="my-work" class="my-work" data-aos="fade-up">
+    <h2 class="shadow-pulse">My Portfolio</h2>
+    <p class="work-intro">Explore my projects that combine creativity and technology for web and mobile development.</p>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="card-front">
+          <h3>ESSECT Website</h3>
+          <p>University website</p>
+        </div>
+        <div class="card-back">
+          <h3>ESSECT Website</h3>
+          <p>A modern website built with HTML, CSS, and JavaScript!</p>
+          <a href="https://github.com/boubakri-elaa/Portfolio-Website" target="_blank">Click to View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-front">
+          <h3>Show Management System</h3>
+          <p>Java project</p>
+
+        </div>
+        <div class="card-back">
+          <h3>Show Management System</h3>
+          <p>Show Management System designed to manage shows, venues, and clients through a user-friendly console menu.</p>
+          <a href="https://github.com/boubakri-elaa/Show-Management" target="_blank">Click to View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-front">
+          <h3>Portfolio Website</h3>
+          <p>Personal Branding</p>
+        </div>
+        <div class="card-back">
+          <h3>Portfolio Website</h3>
+          <p>A sleek portfolio showcasing my skills and projects using modern web technologies.</p>
+          <a href="https://github.com/project-link" target="_blank">Click to View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2 class="shadow-pulse">Contact Me</h2>
+    <p class="contact-intro">I'd love to hear from you! Feel free to reach out for collaboration or just a friendly hello.</p>
+    <div class="contact-container">
+      <!-- Updated form with PHP action -->
+      <form name="contact" method="POST" action="contact.php">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn" id="send-button">Send</button>
+      </form>
+    </div>
+  </section>
+  
+  
+  
+  
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.facebook.com/elaa.boubakri/" target="_blank" class="social-link">
+        <img src="facebook.png" alt="Facebook Icon" width="40" height="40">
+      </a>
+      <a href="https://www.instagram.com/elaa.boubakri/" target="_blank" class="social-link">
+        <img src="instagram.png" alt="Instagram Icon" width="40" height="40">
+      </a>
+      <a href="https://www.linkedin.com/in/elaa-boubakri-68b2b9334/" target="_blank" class="social-link">
+        <img src="linkedin.png" alt="LinkedIn Icon" width="40" height="40">
+      </a>
+      <a href="https://github.com/boubakri-elaa" target="_blank" class="social-link">
+        <img src="github.png" alt="GitHub Icon" width="40" height="40">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
